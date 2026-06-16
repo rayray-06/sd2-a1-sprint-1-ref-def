@@ -179,3 +179,10 @@ Levels are constructed by placing modular tile layouts alongside specific hazard
   * `move_left`: Mapped to `A` and `Left Arrow` keys.
   * `move_right`: Mapped to `D` and `Right Arrow` keys.
   * `jump`: Mapped to `Spacebar` and `W` keys.
+
+## 13.0 Core Algorithmic Pseudocode (GDScript Structure)
+<img width="575" height="270" alt="image" src="https://github.com/user-attachments/assets/a0f006ca-d9d7-4f0b-9cb3-e8f6491f009d" />
+<img width="328" height="140" alt="image" src="https://github.com/user-attachments/assets/edcfbc19-02ec-4d76-ad81-6c12e696b71c" />
+<img width="262" height="72" alt="image" src="https://github.com/user-attachments/assets/0a62bfb0-6e76-4c4c-965f-2ee1681bffa3" />
+
+
