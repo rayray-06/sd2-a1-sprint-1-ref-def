@@ -127,3 +127,32 @@ The prototype is considered complete and operational only when:
 | **B.7** | Core UI Canvas | Medium | Displays real-time score lines and brings up menu modules depending on the game state. | Check text readouts during play. Verify the string prints correct point adjustments. |
 | **B.8** | Menu Lifecycles | Medium | The `GetTree().change_scene_to_file()` method handles file routing without loading hangs. | Swap screen modes. Confirm clean scene changes between active levels and menus. |
 | **B.9** | Exit Triggers | High | Endzone layers track player entry, pause level updates, and render the final Win screen. | Step into the finish zone. Confirm active physics stop and the completion UI loads. |
+
+
+## 9.0 Environment, Gameplay, and Player Motivation Loops
+
+### 9.1 Environment Layout
+Levels are constructed by placing modular tile layouts alongside specific hazard zones. The physical progression follows three key design zones:
+1. **Intro Zone:** A flat, safe area used to test basic left/right running controls and single vertical jumps.
+2. **Ascent Zone:** Vertical platform arrangements that require timed jumps over open gaps.
+3. **Danger Corridor:** Narrow routes guarded by patrolling hazards, where players must time their movements carefully to reach the final exit.
+
+### 9.2 The Gameplay Framework
++------------------+     +-------------------+     +---------------------+
+|  Load Main Menu  | --> | Run/Jump Platform | --> | Evade Enemy/Hazards |
++------------------+     +-------------------+     +---------------------+
+^                         |                          |
+|                         v                          v
+[Select Restart]        (Collect Relics)             (Impact Collision)
+|                         |                          |
+|                         v                          v
++------------------+     +-------------------+     +---------------------+
+| Reset System Loop| <-- | Reach Exit Portal |     | Trigger Game Over   |
++------------------+     +-------------------+     +---------------------+
+
+
+### 9.3 Player Motivation Loop
+* **Current State:** The player enters a room with low scores and needs to find an exit path safely.
+* **Core Need:** Navigating complex geometric gaps while safely avoiding incoming threats.
+* **The Challenge:** Missing jumps results in instant death, requiring players to build muscle memory and master the controls.
+* **The Reward:** Picking up shining relics increments the UI score counters, while reaching the exit awards a clear victory screen.
