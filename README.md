@@ -37,3 +37,24 @@ To build, evaluate, and document a stable 2D platformer prototype in Godot that 
 * **Physics & Interactions:** Code responsive movement profiles by adapting Godot’s built-in vector functions.
 * **State Operations:** Set up a clean layout linking the Main Menu, active level loops, Game Over screens, and Victory screens.
 * **Tests:** Run systematic playtests to prove the code matches our original assignment requirements.
+
+## 3.0 Game Concept & Target Audience
+
+### 3.1 Game Concept
+Platform Quest balances classic 2D retro design with modern game feel. The level layout provides a natural difficulty progression. 
+
+### 3.2 Target Audience 
+
+#### Casual Gamers
+* **Characteristics:** Want immediate visual feedback, straightforward layouts, and easy-to-learn control schemes.
+* **Design Match:** Configured intuitive directional keyboard layouts along with clear score displays.
+
+#### Nostalgic Platform Game Fans
+* **Characteristics:** Players who love 2D pixel styles, strict jump weight, and a fair mechanical challenge.
+* **Design Match:** Applied crisp *Nearest Neighbor* filters to pixel art sheets and tuned gravity curves to match retro gameplay.
+
+#### Students & Young Adults (Aged 18–25)
+* **Characteristics:** Highly sensitive to sticky collisions, poor hitboxes, or loose floaty movement.
+* **Design Match:** Fine-tuned collision boxes and grounded checks so player movement inputs respond instantly.
+
+---
