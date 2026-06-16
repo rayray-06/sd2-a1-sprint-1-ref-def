@@ -163,3 +163,19 @@ Levels are constructed by placing modular tile layouts alongside specific hazard
 * **Relic Rules:** Overlapping an item asset flags it as picked up, adds +1 to points, and removes the instance. Collected objects remain gone for the rest of that run.
 * **Failure Actions:** Striking an enemy hitbox or landing on spikes calls the scene reset tool and opens the Game Over menu overlay.
 * **Victory States:** Passing through the end portal trigger stops active play logic, clears the level, and shows the Win screen canvas.
+
+## 11.0 State Management Architecture
+...
+
+## 12.0 Engine, Platform, and Input Maps
+
+### 12.1 Engine Environment & Scripting
+* **Engine Environment:** **Godot Engine (v4.x)** (Chosen for its lightweight footprint, dedicated 2D node workflows, and clean scene instancing toolset).
+* **Script Framework:** **GDScript** (High-level, indentation-based language designed specifically to interact cleanly with Godot's internal engine loops).
+
+### 12.2 Target Build Environment
+* **Platform Target:** Desktop PC machines running regular keyboard hardware setups.
+* **Project Input Map Assignments:**
+  * `move_left`: Mapped to `A` and `Left Arrow` keys.
+  * `move_right`: Mapped to `D` and `Right Arrow` keys.
+  * `jump`: Mapped to `Spacebar` and `W` keys.
