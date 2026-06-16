@@ -2,7 +2,7 @@
 ## Table of Contents
 
 - [Project Overview](#1-project-overview)
-- [Project Breakdown ](#2-project-breakdown)
+- [Project im and Objectives ](#2-project-aim-and-objectives)
 - [Game Concept](#3-game-concept)
 - [Target Audience](#4-target-audience)
 - [User Profiles](#5-user-profiles)
@@ -27,54 +27,23 @@ The game challenges the player to navigate through a level by jumping across pla
 
 The project focuses on implementing core platformer mechanics while following a structured software development process.
 
-## 2. Project Breakdown
+## 2. Project Aim and Objectives
 
-**Planning**  
-In order to comprehend common mechanics like movement, jumping, and level progression, research into current 2D platformer games was done during the planning phase. This led to the decision to develop a straightforward platformer that prioritizes basic gameplay over sophisticated features.
+### 2.1 Aim
 
-The primary characteristics noted were:- The player's left and right movements
-Gravity-driven jumping
-Designing at the platform level
-Basic detection of collisions
+To develop a functional 2D platform game where the player can navigate obstacles, collect relics and successfully reach the end of the level.
 
-This phase assisted in defining the project's scope and guaranteed that it could be completed within the allotted time.
+### 2.2 Objectives
 
-**Design**  
-The game's structure was planned during the design stage. This included the layout of the level and how the player would engage with the surroundings.
+Design and develop a playable platform game.
+Implement player movement and jumping mechanics.
+Implement collectible items.
+Implement hazards and fail conditions.
+Create win and lose states.
+Design a simple user interface.
+Test the game against requirements.
+Produce a playable prototype suitable for demonstration.
 
-Among the important design choices were:Using a side-scrolling design
-Setting up platforms at varying heights to necessitate leaping
-Maintaining responsive and straightforward controls
-Creating a level with a distinct beginning and ending
-
-**Development**  
-The development stage involved building the game in Unity using C# scripts. Work was completed in stages to allow testing after each feature was added.
-
-The order of implementation was:
-1. Setting up the Unity project and scene  
-2. Creating the player object  
-3. Implementing movement controls  
-4. Adding jumping using Unity physics  
-5. Creating platforms with colliders  
-6. Implementing collision detection  
-7. Adding a camera that follows the player  
-8. Designing the level layout  
-
-This step-by-step approach made it easier to identify and fix issues early.
-
-**Testing**  
-Testing was carried out throughout development rather than only at the end. Each feature was tested after implementation to make sure it worked correctly.
-
-Examples of testing included:
-- Checking if the player could move smoothly  
-- Ensuring jumping felt natural and responsive  
-- Verifying the player did not fall through platforms  
-- Testing level navigation  
-
-**Deployment**  
-Prepared the final version for submission.
-
----
 ## 3. Game Concept
 
 The game is a 2D side-scrolling platformer that draws inspiration from vintage video games. A character that the player controls must move left and right, jump across platforms, and stay upright in order to complete a level.
@@ -83,24 +52,34 @@ The goal of the game is to complete the level while avoiding obstacles. By requi
 
 Instead of emphasizing intricate features, the game focuses on fundamental platformer mechanics. This includes responsive jumping, fluid motion, and accurate collision detection. To guarantee that the game is both practical and simple to comprehend, the overall design is kept straightforward.
 
----
 ## 4. Target Audience
 
-Casual gamers who like easy-to-play games are the target market for this game. It is appropriate for players with little to no gaming experience because the controls are simple to learn.
+### 4.1 Casual Gamers
+Characteristics:
 
-Because it replicates the fundamental mechanics of classic games, it is also appropriate for players who like retro-style platformers.
+Prefer simple controls
+Want enjoyable short play sessions
+Expect quick understanding of the game
 
-The target audience consists of:Young players and students searching for an easy game to play ,Casual players who like quick, simple games  and Players who like challenges based on platforms  
+### 4.2 Nostalgic Platform Game Fans
+Characteristics:
 
-The game's quick gameplay, straightforward goal, and low level of complexity make it suitable for a broad spectrum of players.
+Familiar with platform games
+Often enjoy nostalgic games inspired by older titles
+Prefer addictive but easy-to-play experiences
 
----
+### 4.3 Students/Young Adults Aged 18-25
+Characteristics:
+
+Notice movement quality and jump accuracy
+Appreciate fair challenge and good level flow
+Enjoy replayable platforming mechanics
+
 ## 5. User Profiles
-<img width="544" height="206" alt="image" src="https://github.com/user-attachments/assets/94a1dda8-71c2-40fa-9546-465a8e5bb069" />
-<img width="410" height="178" alt="image" src="https://github.com/user-attachments/assets/0078ce91-df44-40a5-8717-05220fdcecaa" />
 
 
----
+
+
 ## 6. User Requirements
 
 - The player should be able to move left and right  
