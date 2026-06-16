@@ -78,3 +78,23 @@ The prototype is considered complete and operational only when:
 2. The vertical jump only triggers when the player node's floor check is verified as true.
 3. Overlapping a danger tile immediately halts inputs and switches the scene to the Game Over template.
 4. Touching the exit gate stops physics updates and opens the Level Win overlay menu.
+
+## 5.0 User and System Requirements
+
+### 5.1 User Requirements
+* **.1:** The player must control movement smoothly using responsive keyboard actions.
+* **.2:** The player must be able to tell platforms, collectible items, and danger zones apart visually.
+* **.3:** The player must see their point score update immediately on the screen interface.
+* **.4:** The player must be able to restart the game loop from the failure screen without the software crashing.
+
+### 5.2 System Requirements
+* **.1:** The engine must read hardware inputs (`A`, `D`, `Space`, `W`) in real time.
+* **.2:** The system must apply an acceleration downward when the character is not resting on floor geometry.
+* **.3:** The application must utilize Godot's 2D collision layer masks to handle entity overlaps.
+* **.4:** The script pipeline must update active point variables on relic collections and push changes to the string UI node.
+* **.5:** The engine must handle scene reloads or menu swaps cleanly without leaking active assets in memory.
+
+### 5.3 Non-Functional Requirements
+* **.1 Performance:** The game loop must maintain a smooth framerate target on typical computer setups.
+* **.2 Maintainability:** Code must be split into distinct scripts (e.g., `player.gd`, `relic.gd`) to keep code modular and clean.
+* **.3 Robustness:** Collision checks must run reliably to keep characters from clipping through floor tiles or getting stuck in wall boundaries.
