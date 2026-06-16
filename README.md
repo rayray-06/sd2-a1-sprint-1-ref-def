@@ -26,3 +26,14 @@
 
 The game requires the player to explore an underground map, run across platform layouts, jump over open gaps, gather ancient relics, avoid obstacles, and locate the final exit portal safely.
 
+## 2.0 Project Aim and Objectives
+
+### 2.1 Aim
+To build, evaluate, and document a stable 2D platformer prototype in Godot that satisfies core software engineering principles—specifically low class coupling, modular scenes, and solid input validation.
+
+### 2.2 Objectives
+* **Requirements & Sprints:** Organize assignment constraints into real Scrum User Stories and a manageable Product Backlog.
+* **Scene Architecture:** Use Godot's node nesting tree to separate player logic, level design, UI, and collectible items.
+* **Physics & Interactions:** Code responsive movement profiles by adapting Godot’s built-in vector functions.
+* **State Operations:** Set up a clean layout linking the Main Menu, active level loops, Game Over screens, and Victory screens.
+* **Tests:** Run systematic playtests to prove the code matches our original assignment requirements.
