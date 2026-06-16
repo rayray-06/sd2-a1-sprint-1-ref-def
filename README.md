@@ -22,4 +22,7 @@
 - [18.0 References](#180-references)
 
 ## 1.0 Project Overview
+**Platform Quest** is a 2D side-scrolling platform game designed and developed using the **Godot Engine (v4.x)** and programmed in **GDScript**. Created as part of the reassessment for the Software Development 2 module, the project demonstrates how to plan, build, and test a simple interactive system.
+
+The game requires the player to explore an underground map, run across platform layouts, jump over open gaps, gather ancient relics, avoid obstacles, and locate the final exit portal safely.
 
