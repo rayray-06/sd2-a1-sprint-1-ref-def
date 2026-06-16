@@ -98,3 +98,32 @@ The prototype is considered complete and operational only when:
 * **.1 Performance:** The game loop must maintain a smooth framerate target on typical computer setups.
 * **.2 Maintainability:** Code must be split into distinct scripts (e.g., `player.gd`, `relic.gd`) to keep code modular and clean.
 * **.3 Robustness:** Collision checks must run reliably to keep characters from clipping through floor tiles or getting stuck in wall boundaries.
+
+## 6.0 Scrum-Style User Stories
+
+| ID | Priority | User Story Description | Purpose / Technical Justification |
+| :--- | :--- | :--- | :--- |
+| **US.1** | High | As a player, I want responsive movement controls so that I can explore the environment effectively. | Formulates the fundamental baseline for level traversal and mechanical validation. |
+| **US.2** | High | As a player, I want to jump onto platforms so that I can access different parts of the level. | Grants vertical access across uneven spatial geometry, satisfying core platformer assumptions. |
+| **US.3** | High | As a player, I want to collect relics so that I can work towards completing the objective. | Sets clear progression drivers and establishes score tracking. |
+| **US.4** | High | As a player, I want hazards to create consequences for mistakes so that the game feels challenging. | Instantiates risk, introducing explicit win/lose tension metrics. |
+| **US.5** | High | As a player, I want a clear level objective so that I know how to complete the game. | Establishes the terminal phase of the gameplay loop, enabling successful state migration. |
+| **US.6** | Medium | As a player, I want visual feedback when collecting relics so that I know my progress is tracked. | Drives player engagement by reflecting real-time inventory adjustments on screen. |
+| **US.7** | Medium | As a player, I want a main menu so that I can start or restart the game easily. | Provides clean application entry and exit setups, aligning with usability standards. |
+| **US.8** | Medium | As a player, I want a game over screen so that I understand when I have failed. | Confirms a terminal loss state clearly and resets player variables cleanly. |
+| **US.9** | Medium | As a player, I want a win screen so that I receive confirmation of completing the level. | Validates skill performance and closes out the active gameplay loops successfully. |
+| **US.10**| Low | As a player, I want additional levels so that the game offers more content in future versions. | Evaluates structural scalability across the scene management architecture. |
+
+## 7.0 Scrum Product Backlog
+
+| Backlog ID | Associated Feature | Priority | Technical Definition of Done (DoD) | Evaluation Metric & Verification Method |
+| :--- | :--- | :--- | :--- | :--- |
+| **B.1** | Player Movement | High | Velocity values change cleanly inside `_physics_process`. Character flips horizontally without shifting collision shapes. | Tap `A`/`D`. Monitor node properties to ensure position transformations align correctly. |
+| **B.2** | Jump Engine | High | Upward velocities fire properly on input. Godot's physics fall calculations drop the character back down smoothly. | Hit `Space`. Verify jump only works from solid surfaces and blocks infinite air-jumping. |
+| **B.3** | Map Tile Colliders | High | Tiles use a clean static collision configuration mapped to our primary Ground layer. | Guide actor over drops. Confirm they stay securely on platforms without sinking through tile seams. |
+| **B.4** | Hazard Detection | High | Traps trigger area entry notifications, immediately running a reset or death sequence. | Move character into spikes. Ensure the player input loops cut out instantly. |
+| **B.5** | AI Patrol Logic | High | Guard items pace predictably between path markers and switch directions at walls. | Observe automated movement. Confirm edge turns work and contact hits the player fail loop. |
+| **B.6** | Relic Collection | Medium | Item areas register player overlap, increase point scores, and call `queue_free()` safely. | Walk over a relic. Verify the item leaves the scene tree and points count up on screen. |
+| **B.7** | Core UI Canvas | Medium | Displays real-time score lines and brings up menu modules depending on the game state. | Check text readouts during play. Verify the string prints correct point adjustments. |
+| **B.8** | Menu Lifecycles | Medium | The `GetTree().change_scene_to_file()` method handles file routing without loading hangs. | Swap screen modes. Confirm clean scene changes between active levels and menus. |
+| **B.9** | Exit Triggers | High | Endzone layers track player entry, pause level updates, and render the final Win screen. | Step into the finish zone. Confirm active physics stop and the completion UI loads. |
