@@ -186,3 +186,17 @@ Levels are constructed by placing modular tile layouts alongside specific hazard
 <img width="262" height="72" alt="image" src="https://github.com/user-attachments/assets/0a62bfb0-6e76-4c4c-965f-2ee1681bffa3" />
 
 
+## 14.0 Project Management & Development Records
+###14.1 Iterative Development Log
+Day 1: Set up Godot 4 project directories. Established subfolders for assets, scenes, and scripts while configuring the repository.
+
+Day 2: Imported 2D graphics sheets and set up our player scene using an AnimatedSprite2D node with idle and run animations.
+
+Day 3: Programmed directional movement code within _physics_process. Built real-time key capture handling.
+
+Day 4: Configured custom Project Input Maps. Fixed air-jumping issues by using Godot's built-in is_on_floor() validation check.
+
+Day 5: Created world terrain layouts using TileMapLayer. Connected physics shapes to tiles and built item tracking masks using an Area2D setup.
+
+Day 6: Tied relic collection scripts directly to control canvas texts. Ran end-to-end scene navigation checks and finalized text documentation.
+
