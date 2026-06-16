@@ -156,3 +156,10 @@ Levels are constructed by placing modular tile layouts alongside specific hazard
 * **Core Need:** Navigating complex geometric gaps while safely avoiding incoming threats.
 * **The Challenge:** Missing jumps results in instant death, requiring players to build muscle memory and master the controls.
 * **The Reward:** Picking up shining relics increments the UI score counters, while reaching the exit awards a clear victory screen.
+
+## 10.0 Game Rules & Logic System
+* **Spawn Coordinates:** The player initializes at set positions $(X_0, Y_0)$ whenever a level scene loads.
+* **Movement Boundaries:** Horizontal running is restricted by solid walls, while vertical jumping requires `is_on_floor()` to return true.
+* **Relic Rules:** Overlapping an item asset flags it as picked up, adds +1 to points, and removes the instance. Collected objects remain gone for the rest of that run.
+* **Failure Actions:** Striking an enemy hitbox or landing on spikes calls the scene reset tool and opens the Game Over menu overlay.
+* **Victory States:** Passing through the end portal trigger stops active play logic, clears the level, and shows the Win screen canvas.
