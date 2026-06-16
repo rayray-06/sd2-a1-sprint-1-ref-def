@@ -57,4 +57,24 @@ Platform Quest balances classic 2D retro design with modern game feel. The level
 * **Characteristics:** Highly sensitive to sticky collisions, poor hitboxes, or loose floaty movement.
 * **Design Match:** Fine-tuned collision boxes and grounded checks so player movement inputs respond instantly.
 
----
+## 4.0 Overall Specification & Minimum Viable Product (MVP)
+
+### 4.1 Core Features (The MVP)
+To keep the project scope realistic while ensuring all grading parameters are achieved, the core features include:
+* **Bidirectional Movement:** Horizontal tracking connected directly to player arrow or `A`/`D` keys.
+* **Grounded Jump Vectors:** Vertical physics checked against the floor to prevent infinite mid-air jumps.
+* **Static Layer Colliders:** Setting up terrain layer layers so the player interacts properly with walls and solid paths.
+* **Relic Tracking:** Intercepting overlapping boundaries to update point counts before safely freeing the item instance.
+* **Basic Hazards:** Dedicated contact triggers that immediately load failure states.
+* **UI Screen Overlays:** Clean canvas layers for the Main Menu, Game Over screen, and a final Level Clear prompt.
+
+### 4.2 Optional/Extended Scope Features
+* **Dynamic Camera Bounds:** Adding a `Camera2D` smoothing offset to trace player positions comfortably.
+* **Audio Feedback Streams:** Connecting node streams to trigger unique sound effects whenever a player jumps or collects items.
+
+### 4.3 Explicit Acceptance Criteria
+The prototype is considered complete and operational only when:
+1. The character moves left or right instantly on input and cuts speed immediately when keys are released.
+2. The vertical jump only triggers when the player node's floor check is verified as true.
+3. Overlapping a danger tile immediately halts inputs and switches the scene to the Game Over template.
+4. Touching the exit gate stops physics updates and opens the Level Win overlay menu.
