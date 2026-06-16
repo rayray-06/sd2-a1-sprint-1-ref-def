@@ -75,7 +75,7 @@ Notice movement quality and jump accuracy
 Appreciate fair challenge and good level flow
 Enjoy replayable platforming mechanics
 
-## 5. User Profiles
+## 5. Overall specification
 
 
 
@@ -148,17 +148,21 @@ The project follows an iterative development strategy based on Agile principles.
 
 ---
 
-## 12. Scrum Backlog
+## 12. User scrum stories
 
-| Feature | Priority | Description | Test Criteria |
-|--------|----------|-------------|---------------|
-| Player Movement | High | Allow the player to move left and right using keyboard input | Player moves smoothly left/right when keys are pressed |
-| Jump Mechanic | High | Implement jumping using gravity and physics | Player jumps and lands naturally without floating |
-| Platform Collision | High | Ensure player can stand on platforms without falling through | Player lands on platforms and does not pass through them |
-| Camera Follow | Medium | Camera follows the player as they move through the level | Camera tracks player smoothly without lag |
-| Level Design | Medium | Create platforms at different heights for navigation | Player can move across the level using jumps |
-| Game Restart | High | Allow the game to restart after player falls or loses | Game resets correctly when player loses |
-| Testing & Debugging | High | Identify and fix bugs in movement and collisions | No major bugs during gameplay |
+| ID   | Priority | User Story                                                                                              | Purpose                                                     |
+| ---- | -------- | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| US1  | High     | As a player, I want responsive movement controls so that I can explore the environment effectively.     | Allows the player to navigate the level smoothly.           |
+| US2  | High     | As a player, I want to jump onto platforms so that I can access different parts of the level.           | Supports level traversal and progression.                   |
+| US3  | High     | As a player, I want to collect relics so that I can work towards completing the objective.              | Encourages exploration and interaction with the game world. |
+| US4  | High     | As a player, I want hazards to create consequences for mistakes so that the game feels challenging.     | Introduces risk and player decision-making.                 |
+| US5  | High     | As a player, I want a clear level objective so that I know how to complete the game.                    | Gives the player a sense of direction and progression.      |
+| US6  | Medium   | As a player, I want visual feedback when collecting relics so that I know my progress is being tracked. | Improves user experience and feedback.                      |
+| US7  | Medium   | As a player, I want a main menu so that I can start or restart the game easily.                         | Improves usability and navigation.                          |
+| US8  | Medium   | As a player, I want a game over screen so that I understand when I have failed.                         | Clearly communicates failure states.                        |
+| US9  | Medium   | As a player, I want a win screen so that I receive confirmation of completing the level.                | Provides closure and achievement feedback.                  |
+| US10 | Low      | As a player, I want additional levels so that the game offers more content in future versions.          | Supports future expansion of the project.                   |
+
 
 
 
