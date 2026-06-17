@@ -198,5 +198,13 @@ Unbounded Character Scale: The player character's structural node scale is curre
 Single-Level Constraint: The project features only one fully realized level layout. There is no multi-stage scene management or level-to-level progression implemented at this stage.
 
 Absence of Terminal Game Loops (No Endgame State): The game does not currently feature a working win or lose condition. While the player can navigate the architecture and jump off ledges, stepping into hazard zones or reaching the end of the level layout does not stop physics or trigger UI menu screens. The game currently runs as an infinite testing sandbox.
+| Feature | Implementation Status | Functional Description / Current State |
+| :--- | :--- | :--- |
+| **Bidirectional Movement** | :white_check_mark: **Fully Operational** | Captured via keyboard axis mapping (`left`, `right`). The character moves smoothly, though the sprite is currently too large for the environment. |
+| **Vertical Jumps** | :white_check_mark: **Fully Operational** | Ground-checked physics calculation loop using `is_on_floor()`. Successfully triggers an upward velocity vector (`JUMP_VELOCITY = -850.0`). |
+| **Ledges & Platforms** | :white_check_mark: **Fully Operational** | Solid physics colliders applied to the level geometry. The character interacts properly with floors and can jump onto or off elevated ledges. |
+| **Level Textures** | :white_check_mark: **Fully Operational** | Godot TileMap structures have visual textures properly applied to clearly define the playable terrain from the background. |
+| **Multi-Stage Progression** | :x: *Not Implemented* | The game does not change scenes or progress. It is strictly limited to a single-level testing sandbox. |
+| **Terminal Game Loops** | :x: *Not Implemented* | There is no working endgame state. Reaching the end of the level or falling into gaps does not trigger a Win or Game Over screen. |
 
 
