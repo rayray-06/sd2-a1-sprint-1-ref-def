@@ -16,10 +16,7 @@
 - [12.0 Engine, Platform, and Input Maps](#120-engine-platform-and-input-maps)
 - [13.0 Core Algorithmic Pseudocode (GDScript Structure)](#130-core-algorithmic-pseudocode-gdscript-structure)
 - [14.0 Project Management & Development Records](#140-project-management--development-records)
-- [15.0 Comprehensive Testing Strategy and Test Logs](#150-comprehensive-testing-strategy-and-test-logs)
-- [16.0 Technical Challenges & Solutions](#160-technical-challenges--solutions)
-- [17.0 Critical Project Evaluation](#170-critical-project-evaluation)
-- [18.0 References](#180-references)
+- [15.0 review](#150-review)
 
 ## 1.0 Project Overview
 **Platform Quest** is a 2D side-scrolling platform game designed and developed using the **Godot Engine (v4.x)** and programmed in **GDScript**. Created as part of the reassessment for the Software Development 2 module, the project demonstrates how to plan, build, and test a simple interactive system.
@@ -190,7 +187,7 @@ Day 5: Created world terrain layouts using TileMapLayer. Connected physics shape
 
 Day 6: Tied relic collection scripts directly to control canvas texts. Ran end-to-end scene navigation checks and finalized text documentation.
 
-## 15.0 overview 
+## 15.0 review
 While the core mechanics are operational, the prototype currently exhibits three distinct structural limitations due to development scope constraints:
 
 Unbounded Character Scale: The player character's structural node scale is currently oversized relative to the overall game window and platform tiles. While this does not break collision accuracy, it restricts the camera's viewable play area and will require downscaling to match standard platformer proportions in future builds.
