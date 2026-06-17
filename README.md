@@ -138,17 +138,7 @@ Levels are constructed by placing modular tile layouts alongside specific hazard
 3. **Danger Corridor:** Narrow routes guarded by patrolling hazards, where players must time their movements carefully to reach the final exit.
 
 ### 9.2 The Gameplay Framework
-+------------------+     +-------------------+     +---------------------+
-|  Load Main Menu  | --> | Run/Jump Platform | --> | Evade Enemy/Hazards |
-+------------------+     +-------------------+     +---------------------+
-^                         |                          |
-|                         v                          v
-[Select Restart]        (Collect Relics)             (Impact Collision)
-|                         |                          |
-|                         v                          v
-+------------------+     +-------------------+     +---------------------+
-| Reset System Loop| <-- | Reach Exit Portal |     | Trigger Game Over   |
-+------------------+     +-------------------+     +---------------------+
+<img width="457" height="212" alt="image" src="https://github.com/user-attachments/assets/e08cfdc3-10d2-4d78-9450-28a172c97f72" />
 
 
 ### 9.3 Player Motivation Loop
@@ -199,4 +189,14 @@ Day 4: Configured custom Project Input Maps. Fixed air-jumping issues by using G
 Day 5: Created world terrain layouts using TileMapLayer. Connected physics shapes to tiles and built item tracking masks using an Area2D setup.
 
 Day 6: Tied relic collection scripts directly to control canvas texts. Ran end-to-end scene navigation checks and finalized text documentation.
+
+## 15.0 overview 
+While the core mechanics are operational, the prototype currently exhibits three distinct structural limitations due to development scope constraints:
+
+Unbounded Character Scale: The player character's structural node scale is currently oversized relative to the overall game window and platform tiles. While this does not break collision accuracy, it restricts the camera's viewable play area and will require downscaling to match standard platformer proportions in future builds.
+
+Single-Level Constraint: The project features only one fully realized level layout. There is no multi-stage scene management or level-to-level progression implemented at this stage.
+
+Absence of Terminal Game Loops (No Endgame State): The game does not currently feature a working win or lose condition. While the player can navigate the architecture and jump off ledges, stepping into hazard zones or reaching the end of the level layout does not stop physics or trigger UI menu screens. The game currently runs as an infinite testing sandbox.
+
 
