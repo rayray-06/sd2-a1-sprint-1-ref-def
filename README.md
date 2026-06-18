@@ -204,4 +204,6 @@ Absence of Terminal Game Loops (No Endgame State): The game does not currently f
 | **Multi-Stage Progression** | :x: *Not Implemented* | The game does not change scenes or progress. It is strictly limited to a single-level testing sandbox. |
 | **Terminal Game Loops** | :x: *Not Implemented* | There is no working endgame state. Reaching the end of the level or falling into gaps does not trigger a Win or Game Over screen. |
 
+## refrences 
+https://www.youtube.com/watch?v=oED12Mo2018&list=PLjcN1EyupaQl0W9bQZR5i-ky7ukJZmL0Z
 
