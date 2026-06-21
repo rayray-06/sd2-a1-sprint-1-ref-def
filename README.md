@@ -152,6 +152,7 @@ Levels are constructed by placing modular tile layouts alongside specific hazard
 * **Victory States:** Passing through the end portal trigger stops active play logic, clears the level, and shows the Win screen canvas.
 
 ## 11.0 State Management Architecture
+<img width="374" height="319" alt="image" src="https://github.com/user-attachments/assets/bce3edea-7471-41d5-afa3-48e71db18362" />
 
 
 ## 12.0 Engine, Platform, and Input Maps
