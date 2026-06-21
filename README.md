@@ -210,3 +210,5 @@ Absence of Terminal Game Loops (No Endgame State): The game does not currently f
 ## refrences 
 https://www.youtube.com/watch?v=oED12Mo2018&list=PLjcN1EyupaQl0W9bQZR5i-ky7ukJZmL0Z
 
+## to run game open the zip folder. it includesnall the files for the game
+
