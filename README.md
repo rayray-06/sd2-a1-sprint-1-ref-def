@@ -152,7 +152,7 @@ Levels are constructed by placing modular tile layouts alongside specific hazard
 * **Victory States:** Passing through the end portal trigger stops active play logic, clears the level, and shows the Win screen canvas.
 
 ## 11.0 State Management Architecture
-...
+
 
 ## 12.0 Engine, Platform, and Input Maps
 
@@ -171,7 +171,9 @@ Levels are constructed by placing modular tile layouts alongside specific hazard
 <img width="575" height="270" alt="image" src="https://github.com/user-attachments/assets/a0f006ca-d9d7-4f0b-9cb3-e8f6491f009d" />
 <img width="328" height="140" alt="image" src="https://github.com/user-attachments/assets/edcfbc19-02ec-4d76-ad81-6c12e696b71c" />
 <img width="262" height="72" alt="image" src="https://github.com/user-attachments/assets/0a62bfb0-6e76-4c4c-965f-2ee1681bffa3" />
-
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/a68fa1c4-d9d4-465b-9bee-e7df268eccee" />
+<img width="644" height="391" alt="image" src="https://github.com/user-attachments/assets/a216987c-2518-40b4-948a-a1720689ccd8" />
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/704c1edc-5d30-4684-b226-46b94afca899" />
 
 ## 14.0 Project Management & Development Records
 ###14.1 Iterative Development Log
